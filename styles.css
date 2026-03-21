@@ -57,6 +57,12 @@ button, input { font: inherit; }
   width: min(calc(100% - 2rem), var(--container));
   margin: 0 auto;
 }
+.centered{
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+  padding: 15px;
+}
 
 .site-header {
   position: sticky;
@@ -206,6 +212,19 @@ button, input { font: inherit; }
   color: var(--color-white);
   box-shadow: 0 12px 30px rgba(239, 37, 92, 0.28);
 }
+
+
+.btn-primary:hover,
+.btn-primary:focus-visible { background: var(--color-brand-dark); }
+.btn-secondary {
+  background: #9e2404;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
 .btn-nav{
   color: var(--color-brand) !important;
   background: var(--color-white);
@@ -216,21 +235,6 @@ button, input { font: inherit; }
   border-top-left-radius: 10px;
   min-height: 2rem;
   padding: 3px 10px;
-}
-.centered{
-  margin: 0 auto;
-  max-width: 600px;
-  text-align: center;
-}
-.btn-primary:hover,
-.btn-primary:focus-visible { background: var(--color-brand-dark); }
-.btn-secondary {
-  background: #9e2404;
-  color: #fff;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
 }
 
 .section {
