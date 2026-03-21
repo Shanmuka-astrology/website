@@ -53,6 +53,34 @@ button, input { font: inherit; }
   z-index: 1000;
 }
 
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 12px;
+  text-align: center;
+  background-color: #000; /* change to your brand */
+}
+
+@media (min-width: 768px) {
+  .sticky-cta {
+    display: none;
+  }
+}
+
+/* Optional: button styling inside */
+.sticky-cta a {
+  display: inline-block;
+  background: #fff;
+  color: #000;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .container {
   width: min(calc(100% - 2rem), var(--container));
   margin: 0 auto;
@@ -62,6 +90,10 @@ button, input { font: inherit; }
   max-width: 600px;
   text-align: center;
   padding: 15px;
+}
+.sticky{
+  position: absolute;
+  Margin-bottom: 10px;
 }
 
 .site-header {
@@ -645,6 +677,12 @@ button, input { font: inherit; }
   .about-media { order: 2; }
   .subscribe-row { grid-template-columns: 1fr; }
   .subscribe-row .btn { width: 100%; }
+  .sticky-cta {display: block !important;
+  position: absolute;
+margin-bottom:10px;
+margin-right: 10px;
+z-index: 1;
+}
 }
 
 @media (max-width: 575.98px) {
