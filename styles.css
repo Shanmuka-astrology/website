@@ -54,14 +54,13 @@ button, input { font: inherit; }
 }
 
 .sticky-cta {
-  position: fixed;
+  position: sticky;
   bottom: 0;
-  left: 0;
   width: 100%;
   z-index: 9999;
-  padding: 12px;
-  text-align: center;
-  background-color: #000; /* change to your brand */
+  padding: 15px;
+  text-align: right;
+  background-color: none; /* change to your brand */
 }
 
 @media (min-width: 768px) {
@@ -74,11 +73,19 @@ button, input { font: inherit; }
 .sticky-cta a {
   display: inline-block;
   background: #fff;
-  color: #000;
+  border: 1px solid #E91543;
+  color: #E91543;
   padding: 12px 20px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
+  -webkit-box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2); /* older Safari */
+  -moz-box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);    /* old Firefox */
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);   
+}
+.sticky-cta a:hover{
+  color: #c61947;
+  border: 1px solid #c61947;
 }
 
 .container {
@@ -91,10 +98,7 @@ button, input { font: inherit; }
   text-align: center;
   padding: 15px;
 }
-.sticky{
-  position: absolute;
-  Margin-bottom: 10px;
-}
+
 
 .site-header {
   position: sticky;
@@ -677,13 +681,8 @@ button, input { font: inherit; }
   .about-media { order: 2; }
   .subscribe-row { grid-template-columns: 1fr; }
   .subscribe-row .btn { width: 100%; }
-  .sticky-cta {display: block !important;
-  position: absolute;
-margin-bottom:10px;
-margin-right: 10px;
-z-index: 1;
 }
-}
+
 
 @media (max-width: 575.98px) {
   .brand { gap: 0.5rem; }
