@@ -57,7 +57,7 @@ button, input { font: inherit; }
   position: sticky;
   bottom: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 90;
   padding: 15px;
   text-align: right;
   background-color: none; /* change to your brand */
